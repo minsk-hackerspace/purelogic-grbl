@@ -110,7 +110,7 @@
 #define CONTROL_PIN       PINC
 #define CONTROL_PORT      PORTC
 #define RESET_BIT         0  // Uno Analog Pin 0
-#define FEED_HOLD_BIT     1  // Uno Analog Pin 1
+#define FEED_HOLD_BIT     5  // Uno Analog Pin 5
 #define CYCLE_START_BIT   2  // Uno Analog Pin 2
 #define SAFETY_DOOR_BIT   1  // Uno Analog Pin 1 NOTE: Safety door is shared with feed hold. Enabled by config define.
 #define CONTROL_INT       PCIE1  // Pin change interrupt enable pin
@@ -123,13 +123,13 @@
 #define PROBE_DDR       DDRC
 #define PROBE_PIN       PINC
 #define PROBE_PORT      PORTC
-#define PROBE_BIT       5  // Uno Analog Pin 5
+#define PROBE_BIT       1  // Uno Analog Pin 1
 #define PROBE_MASK      (1<<PROBE_BIT)
 
 // Start of PWM & Stepper Enabled Spindle
 #ifdef VARIABLE_SPINDLE
   // Advanced Configuration Below You should not need to touch these variables
-  #define PWM_MAX_VALUE    255.0
+  #define PWM_MAX_VALUE    248.0
   #define TCCRA_REGISTER	 TCCR2A
   #define TCCRB_REGISTER	 TCCR2B
   #define OCR_REGISTER     OCR2A
